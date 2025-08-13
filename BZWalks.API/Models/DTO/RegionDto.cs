@@ -1,4 +1,4 @@
-﻿namespace BZWalks.API.Models.DTOs
+﻿namespace BZWalks.API.Models.DTO
 {
     public class RegionDto
     {
