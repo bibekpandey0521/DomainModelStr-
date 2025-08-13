@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BZWalks.API", "BZWalks.API\BZWalks.API.csproj", "{BCAFF919-AC4D-45FD-AC0A-529FDA391D0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCAFF919-AC4D-45FD-AC0A-529FDA391D0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCAFF919-AC4D-45FD-AC0A-529FDA391D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCAFF919-AC4D-45FD-AC0A-529FDA391D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCAFF919-AC4D-45FD-AC0A-529FDA391D0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82EC4577-E96F-4528-BC7F-BD4D6BBC5D92}
+	EndGlobalSection
+EndGlobal
