@@ -1,4 +1,5 @@
 using BZWalks.API.Data;
+using BZWalks.API.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<BZWalksDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("BZWalksConnectionString")));
+
+builder.Services.AddScoped<IRegionRepository, SQLRegionRepository>();
 
 var app = builder.Build();
 
