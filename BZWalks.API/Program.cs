@@ -1,6 +1,9 @@
+using AutoMapper;
 using BZWalks.API.Data;
+using BZWalks.API.Mappings;
 using BZWalks.API.Repositories;
 using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +22,13 @@ builder.Services.AddDbContext<BZWalksDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("BZWalksConnectionString")));
 
 builder.Services.AddScoped<IRegionRepository, SQLRegionRepository>();
+
+//builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
+builder.Services.AddSingleton(new MapperConfiguration(cfg =>
+{
+    cfg.AddProfile<AutoMapperProfiles>();
+}).CreateMapper());
+
 
 var app = builder.Build();
 
